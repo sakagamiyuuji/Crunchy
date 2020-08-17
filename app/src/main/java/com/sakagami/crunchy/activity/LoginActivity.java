@@ -82,6 +82,15 @@ public class LoginActivity extends AppCompatActivity {
                 startActivityForResult(signInIntent, CODE_SIGN_IN);
             }
         });
+
+        tvRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void loginCek(){

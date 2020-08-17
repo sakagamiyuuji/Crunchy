@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="5dp"
     tools:context=".activity.RegisterActivity"
     android:background="@drawable/origami">
 
@@ -48,16 +48,16 @@
 
             <EditText
                 android:id="@+id/edt_firstname"
-                android:layout_width="120dp"
-                android:layout_height="30sp"
-                android:textSize="15sp"
+                android:layout_width="150dp"
+                android:layout_height="35sp"
+                android:textSize="17sp"
                 android:layout_marginTop="5dp"
                 android:hint="Melisa"
-                android:background="@color/whiteBodyColor"
+                android:textColor="@color/darkTextColor"
+                android:background="@drawable/home_gradient_redpurple"
                 android:inputType="textEmailAddress"
                 android:layout_below="@+id/tt_firstname"
-                android:drawablePadding="10dp"
-                android:padding="5dp"
+                android:paddingStart="15dp"
                 android:textColorHighlight="@color/gradientLightGreen"/>
 
             <TextView
@@ -67,20 +67,20 @@
                 android:text="@string/text_last_name"
                 android:textSize="15sp"
                 android:textColor="@color/darkTextColor"
-                android:layout_alignParentRight="true" />
+                android:layout_alignParentEnd="true" />
 
             <EditText
                 android:id="@+id/edt_lastname"
-                android:layout_width="120dp"
-                android:layout_height="30dp"
+                android:layout_width="150dp"
+                android:layout_height="35sp"
+                android:textSize="17sp"
                 android:layout_marginTop="5dp"
                 android:hint="Chan"
-                android:textSize="15sp"
-                android:background="@color/whiteBodyColor"
+                android:textColor="@color/darkTextColor"
+                android:background="@drawable/home_gradient_redpurple"
                 android:layout_below="@+id/tt_lastname"
                 android:layout_alignParentEnd="true"
-                android:drawablePadding="10dp"
-                android:padding="5dp"/>
+                android:paddingStart="15dp"/>
 
             <TextView
                 android:id="@+id/tt_email"
@@ -95,14 +95,14 @@
             <EditText
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="35sp"
+                android:textSize="17sp"
                 android:layout_marginTop="5dp"
                 android:hint="udinpenyok123@gmail.com"
-                android:textSize="15sp"
-                android:background="@color/whiteBodyColor"
+                android:textColor="@color/darkTextColor"
+                android:background="@drawable/home_gradient_redpurple"
                 android:layout_below="@+id/tt_email"
-                android:drawablePadding="10dp"
-                android:padding="5dp"/>
+                android:paddingLeft="15dp"/>
 
             <TextView
                 android:id="@+id/tt_password"
@@ -124,16 +124,17 @@
                 <EditText
                     android:id="@+id/edt_password"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="35sp"
+                    android:textSize="17sp"
                     android:layout_marginTop="5dp"
                     app:passwordToggleEnabled="true"
-                    android:hint="********"
-                    android:textSize="15sp"
-                    android:background="@color/whiteBodyColor"
+                    android:text="aaaaaa"
+                    android:textColor="@color/darkTextColor"
+                    android:background="@drawable/home_gradient_redpurple"
                     android:layout_below="@+id/tt_password"
                     android:inputType="textPassword"
                     android:drawablePadding="10dp"
-                    android:padding="5dp"/>
+                    android:paddingStart="15dp"/>
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -142,7 +143,7 @@
                 android:id="@+id/tt_confirmpassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Confirm Password"
+                android:text="@string/text_confirm_password"
                 android:layout_marginTop="5dp"
                 android:layout_below="@id/wrap_password"
                 android:textSize="15sp"
@@ -158,14 +159,15 @@
                 <EditText
                     android:id="@+id/edt_confirmpassword"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="35sp"
+                    android:textSize="17sp"
                     android:layout_marginTop="5dp"
-                    android:hint="********"
-                    android:textSize="15sp"
-                    android:background="@color/whiteBodyColor"
+                    android:textColor="@color/darkTextColor"
+                    android:background="@drawable/home_gradient_redpurple"
                     android:inputType="textPassword"
+                    android:text="aaaaaa"
                     android:drawablePadding="10dp"
-                    android:padding="5dp"/>
+                    android:paddingStart="15dp"/>
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -179,43 +181,9 @@
                 android:visibility="gone"
                 android:layout_below="@id/wrap_confirmpassword"/>
 
-            <LinearLayout
-                android:id="@+id/linear_merchant"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_below="@id/checkbox_as_merchant"
-                android:visibility="invisible">
-
-                <TextView
-                    android:id="@+id/tt_merchantname"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Merchant Name"
-                    android:layout_below="@+id/edt_password"
-                    android:layout_marginTop="5dp"
-                    android:textSize="15sp"
-                    android:textColor="@color/darkTextColor" />
-
-                <EditText
-                    android:id="@+id/edt_merchantname"
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:textSize="15sp"
-                    android:layout_marginTop="5dp"
-                    android:hint="Xiaomi Official Store"
-                    android:background="@color/whiteBodyColor"
-                    android:inputType="textEmailAddress"
-                    android:drawablePadding="10dp"
-                    android:padding="5dp"
-                    android:textColorHighlight="@color/gradientLightGreen"/>
-
-            </LinearLayout>
-
-
             <androidx.cardview.widget.CardView
-                android:id="@+id/signup"
-                android:layout_width="150dp"
+                android:id="@+id/cv_register"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
@@ -227,11 +195,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="REGISTER"
+                    android:text="@string/text_register"
                     android:textColor="@color/colorError"
                     android:textAlignment="center"
                     android:background="@color/gradientLightYellow"
-                    android:textSize="20dp"
+                    android:textSize="30dp"
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>

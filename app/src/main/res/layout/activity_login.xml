@@ -88,9 +88,9 @@
             android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_login"
+            android:layout_below="@+id/btn_login_gooogle"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
             android:text="@string/info_login_signup"
             android:textAlignment="center"
@@ -100,10 +100,9 @@
             android:id="@+id/btn_login_gooogle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_register"
+            android:layout_below="@+id/btn_login"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"/>
-
     </RelativeLayout>
 
     <TextView
