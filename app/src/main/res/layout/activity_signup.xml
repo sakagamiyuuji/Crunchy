@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activity.LoginActivity"
+    android:background="@drawable/origami">
+
+
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:fontFamily="@font/australia"
+        android:textSize="50sp"
+        android:textColor="@color/gradientLightBlue"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title_login"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="50dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/low_poly">
+
+
+            <TextView
+                android:id="@+id/tt_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firstname"
+                android:textColor="@color/darkTextColor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_firstname"
+                android:layout_width="120dp"
+                android:layout_height="30sp"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:hint="Udin"
+                android:background="@color/whiteBodyColor"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/tt_firstname"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:textColorHighlight="@color/gradientLightGreen"/>
+
+            <TextView
+                android:id="@+id/tt_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="15sp"
+                android:textColor="@color/darkTextColor"
+                android:layout_alignParentRight="true" />
+
+            <EditText
+                android:id="@+id/edt_lastname"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:hint="Smith"
+                android:textSize="15sp"
+                android:background="@color/whiteBodyColor"
+                android:layout_below="@+id/tt_lastname"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="10dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/tt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_below="@+id/edt_firstname"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/darkTextColor" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:hint="udinpenyok123@gmail.com"
+                android:textSize="15sp"
+                android:background="@color/whiteBodyColor"
+                android:layout_below="@+id/tt_email"
+                android:drawablePadding="10dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/tt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_below="@+id/edt_email"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/darkTextColor" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/wrap_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tt_password"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    app:passwordToggleEnabled="true"
+                    android:hint="********"
+                    android:textSize="15sp"
+                    android:background="@color/whiteBodyColor"
+                    android:layout_below="@+id/tt_password"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"
+                    android:padding="5dp"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tt_confirmpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/wrap_password"
+                android:textSize="15sp"
+                android:textColor="@color/darkTextColor" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/wrap_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tt_confirmpassword"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edt_confirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="********"
+                    android:textSize="15sp"
+                    android:background="@color/whiteBodyColor"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"
+                    android:padding="5dp"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <CheckBox
+                android:id="@+id/checkbox_as_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up as a merchant too ?"
+                android:layout_below="@id/wrap_confirmpassword"/>
+
+            <LinearLayout
+                android:id="@+id/linear_merchant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/checkbox_as_merchant"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tt_merchantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Merchant Name"
+                    android:layout_below="@+id/edt_password"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/darkTextColor" />
+
+                <EditText
+                    android:id="@+id/edt_merchantname"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Xiaomi Official Store"
+                    android:background="@color/whiteBodyColor"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"
+                    android:padding="5dp"
+                    android:textColorHighlight="@color/gradientLightGreen"/>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/signup"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTER"
+                        android:textColor="@color/colorError"
+                        android:textAlignment="center"
+                        android:background="@color/gradientLightYellow"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

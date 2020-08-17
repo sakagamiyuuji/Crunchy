@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "78563478266",
+    "firebase_url": "https://crunchy-1bfcc.firebaseio.com",
+    "project_id": "crunchy-1bfcc",
+    "storage_bucket": "crunchy-1bfcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78563478266:android:a27b0238efe0f9cbd81743",
+        "android_client_info": {
+          "package_name": "com.sakagami.crunchy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78563478266-mqm3p5r3ns1ndj8mr52rf5effg0a5s5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sakagami.crunchy",
+            "certificate_hash": "48b469cbf4d6654427809a5bfcb68de53a78939c"
+          }
+        },
+        {
+          "client_id": "78563478266-82qu6hrsgg5436ptcc43p39bn4kvb4ie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDgGIjrt49asrJgXYys0WHevGCu6l7Tlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78563478266-82qu6hrsgg5436ptcc43p39bn4kvb4ie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

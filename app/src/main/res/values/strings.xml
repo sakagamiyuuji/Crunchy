@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Crunchy</string>
+    <string name="info_login_faq">Login to know what\'s happen today</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="info_login_signup">Don\'t have account?\nSign up here!</string>
+    <string name="txt_login_credential">© Hans Project 2020</string>
+    <string name="txt_splash_description">The way you can do anything</string>
+    <string name="txt_login">LOGIN</string>
+    <string name="txt_logout">LOGOUT</string>
+    <string name="text_firstname">Firstname</string>
+    <string name="text_last_name">Last Name</string>
+    <string name="text_sign_up">SIGN UP</string>
+    <string name="text_password">Password</string>
+</resources>
